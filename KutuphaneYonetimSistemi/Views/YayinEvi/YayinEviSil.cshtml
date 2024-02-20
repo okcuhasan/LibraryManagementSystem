@@ -1,0 +1,19 @@
+﻿@model Yayinevi
+
+@{
+
+}
+
+<h2>Yayınevi Silme Sayfası</h2>
+<hr>
+<p>
+    <b>@Model.YayinEviAdi</b> İsimli Yayınevini silmek istiyor musunuz?
+
+    <form asp-controller="YayinEvi" asp-action="YayinEviSil" method="post">
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="YayinEviId">
+
+        <button type="submit" class="btn btn-danger">Evet</button>
+        <a asp-controller="YayinEvi" asp-action="YayinEviListele" class="btn btn-primary">Hayır</a>
+    </form>
+</p>

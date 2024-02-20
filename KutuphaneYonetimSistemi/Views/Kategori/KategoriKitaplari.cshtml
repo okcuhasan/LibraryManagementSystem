@@ -1,0 +1,13 @@
+﻿@model Kitap
+
+<form method="post" asp-action="KategoriKitaplari" asp-controller="Kategori">
+    @Html.AntiForgeryToken()
+<div class="mb-3">
+    <label asp-for="KategoriId" class="form-label">Kitabın Kategorisi</label>
+    <select asp-for="KategoriId" asp-items="ViewBag.Kategoriler" class="form-select">
+        <option value="">Seçiniz</option>
+    </select>
+
+    <button type="submit">Getir</button>
+</div>
+</form>

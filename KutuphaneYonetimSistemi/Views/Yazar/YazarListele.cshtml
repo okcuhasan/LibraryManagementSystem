@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Yazar>
+
+<h2>Yazar Ekle</h2>
+<a asp-controller="Yazar" asp-action="YazarEkle" class="btn btn-primary">Yazar Ekle</a>
+<hr>
+
+<table class="table table-bordered">
+    <h2>Yazar Listesi</h2>
+    <thead>
+        <tr>
+            <th>Yazar Id</th>
+            <th>Yazar Adı Soyadı</th>
+            <th>Yazar Doğum Tarihi</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.YazarId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.YazarAdiSoyadi)</td>
+                    <td>@Html.DisplayFor(modelItem => item.DogumTarihi)</td>
+                    <td>
+                        <a asp-controller="Yazar" asp-action="YazarGuncelle" asp-route-id="@item.YazarId"
+                           class="btn btn-primary">Yazar Güncelle</a>
+                    </td>
+                    <td>
+                        <a asp-controller="Yazar" asp-action="YazarSil" asp-route-id="@item.YazarId"
+                           class="btn btn-danger">Yazar Sil</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Service.deps.json
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Service.runtimeconfig.json
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Service.dll
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Service.pdb
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Data.dll
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Data.pdb
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.csproj.AssemblyReference.cache
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.AssemblyInfoInputs.cache
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.AssemblyInfo.cs
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.csproj.CoreCompileInputs.cache
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.csproj.CopyComplete
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.dll
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\refint\KutuphaneYonetimSistemi.Service.dll
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.pdb
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.genruntimeconfig.cache
+C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\ref\KutuphaneYonetimSistemi.Service.dll
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Service.deps.json
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Service.runtimeconfig.json
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Service.dll
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Service.pdb
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Data.dll
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Data.pdb
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.csproj.AssemblyReference.cache
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.AssemblyInfoInputs.cache
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.AssemblyInfo.cs
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.csproj.CoreCompileInputs.cache
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.csproj.CopyComplete
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.dll
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\refint\KutuphaneYonetimSistemi.Service.dll
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.pdb
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.genruntimeconfig.cache
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\ref\KutuphaneYonetimSistemi.Service.dll
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Service.deps.json
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Service.runtimeconfig.json
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Service.dll
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Service.pdb
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Data.dll
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\bin\Debug\net7.0\KutuphaneYonetimSistemi.Data.pdb
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.csproj.AssemblyReference.cache
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.AssemblyInfoInputs.cache
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.AssemblyInfo.cs
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.csproj.CoreCompileInputs.cache
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.csproj.CopyComplete
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.dll
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\refint\KutuphaneYonetimSistemi.Service.dll
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.pdb
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\KutuphaneYonetimSistemi.Service.genruntimeconfig.cache
+C:\Users\90554\Desktop\KutuphaneYonetimSistemi - Kopya\KutuphaneYonetimSistemi.Service\obj\Debug\net7.0\ref\KutuphaneYonetimSistemi.Service.dll

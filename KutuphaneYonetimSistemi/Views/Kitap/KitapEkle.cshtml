@@ -1,0 +1,67 @@
+﻿@model Kitap
+
+<h2>Kitap Ekleme Sayfası</h2>
+<hr>
+
+<form asp-controller="Kitap" asp-action="KitapEkle" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    <div class="mb-3">
+        <label asp-for="KitapAdi" class="form-label">Kitap Adı</label>
+        <input asp-for="KitapAdi" type="text" class="form-control">
+        <span asp-validation-for="KitapAdi" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="ImagePath"></label>
+        <input type="file" name="file" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="YazarId" class="form-label">Kitabın Yazarı</label>
+        <select asp-for="YazarId" asp-items="ViewBag.Yazarlar" class="form-select">
+            <option value="">Seçiniz</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="YayineviId" class="form-label">Kitabın Yayınevi</label>
+        <select asp-for="YayineviId" asp-items="ViewBag.YayinEvleri" class="form-select">
+            <option value="">Seçiniz</option>
+        </select>
+    </div>
+
+      <div class="mb-3">
+        <label asp-for="KategoriId" class="form-label">Kitabın Kategorisi</label>
+        <select asp-for="KategoriId" asp-items="ViewBag.Kategoriler" class="form-select">
+            <option value="">Seçiniz</option>
+        </select>
+      </div>
+
+    <div class="mb-3">
+        <label asp-for="KitapFiyati" class="form-label">Kitap Fiyatı</label>
+        <input asp-for="KitapFiyati" type="number" class="form-control">
+        <span asp-validation-for="KitapFiyati" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="KitapYayinTarihi" class="form-label">Kitap Yayınlanma Tarihi</label>
+        <input asp-for="KitapYayinTarihi" type="date" class="form-control">
+        <span asp-validation-for="KitapYayinTarihi" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="SayfaSayisi" class="form-label">Sayfa Sayısı</label>
+        <input asp-for="SayfaSayisi" type="number" class="form-control">
+        <span asp-validation-for="SayfaSayisi" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Dil" class="form-label">Dil</label>
+        <input asp-for="Dil" type="text" class="form-control">
+        <span asp-validation-for="Dil" class="text-danger"></span>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Kitap Ekle</button>
+</form>
+

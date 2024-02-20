@@ -1,0 +1,46 @@
+﻿@model List<ApplicationUser>
+
+<style>
+    .odunc-listesi {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .odunc-bilgisi {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 10px;
+        width: 300px;
+    }
+
+    h3 {
+        color: #333;
+    }
+
+    strong {
+        color: #555;
+    }
+</style>
+
+<h1>Kullanıcıların Ödünç Aldığı Kitaplar</h1>
+
+@if (Model != null && Model.Any())
+{
+    <div class="odunc-listesi">
+        @foreach (var user in Model)
+        {
+            foreach (var oduncKitap in user.Odunc)
+            {
+                <div class="odunc-bilgisi">
+                    <p><strong>Ödünç Alan Kullanıcı:</strong> @oduncKitap?.Kullanici?.UserName</p>
+                    <h3>@oduncKitap?.Kitap?.KitapAdi</h3>
+                    <p><strong>Ödünç Aldığı Tarih:</strong> @oduncKitap?.OduncAlmaTarihi</p>
+                </div>
+            }
+        }
+    </div>
+}
+else
+{
+    <p>Kullanıcı ödünç kitap almamıştır.</p>
+}

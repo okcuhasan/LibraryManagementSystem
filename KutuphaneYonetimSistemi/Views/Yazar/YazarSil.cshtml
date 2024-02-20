@@ -1,0 +1,19 @@
+﻿@model Yazar
+
+@{
+
+}
+
+<h2>Yazar Silme Sayfası</h2>
+<hr>
+<p>
+    <b>@Model.YazarAdiSoyadi</b> İsimli Yazarı silmek istiyor musunuz?
+
+    <form asp-controller="Yazar" asp-action="YazarSil" method="post">
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="YazarId">
+
+        <button type="submit" class="btn btn-danger">Evet</button>
+        <a asp-controller="Yazar" asp-action="YazarListele" class="btn btn-primary">Hayır</a>
+    </form>
+</p>

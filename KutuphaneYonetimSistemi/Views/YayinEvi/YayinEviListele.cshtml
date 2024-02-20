@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Yayinevi>
+
+<h2>Yayınevi Ekle</h2>
+<a asp-controller="YayinEvi" asp-action="YayinEviEkle" class="btn btn-primary">Yayınevi Ekle</a>
+<hr>
+
+<table class="table table-bordered">
+    <h2>Yayınevi Listesi</h2>
+    <thead>
+        <tr>
+            <th>Yayınevi Id</th>
+            <th>Yayınevi Adı</th>
+            <th>Yayınevi Kuruluş Tarihi</th>
+            <th>Yayınevi Adresi</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.YayinEviId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.YayinEviAdi)</td>
+                    <td>@Html.DisplayFor(modelItem => item.KurulusTarihi)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Adres)</td>
+                    <td>
+                        <a asp-controller="YayinEvi" asp-action="YayinEviGuncelle" asp-route-id="@item.YayinEviId"
+                           class="btn btn-primary">Yayınevi Güncelle</a>
+                    </td>
+                    <td>
+                        <a asp-controller="YayinEvi" asp-action="YayinEviSil" asp-route-id="@item.YayinEviId"
+                           class="btn btn-danger">Yayınevi Sil</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+
+

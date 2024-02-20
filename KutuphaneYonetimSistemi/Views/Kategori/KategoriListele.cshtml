@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Kategori>
+
+<h2>Kategori Ekle</h2>
+<a asp-controller="Kategori" asp-action="KategoriEkle" class="btn btn-primary">Kategori Ekle</a>
+
+<a asp-controller="Kategori" asp-action="KategoriKitaplari" class="btn btn-primary">Kategorisine Göre Kitapları Görüntüleyin</a>
+<hr>
+
+<form method="post" asp-controller="Kategori" asp-action="">
+
+</form>
+
+<table class="table table-bordered">
+    <h2>Kategori Listesi</h2>
+    <thead>
+        <tr>
+            <th>Kategori Id</th>
+            <th>Kategori Adı</th>
+            <th>Açıklama</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.KategoriId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.KategoriAdi)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Aciklama)</td>
+                    <td>
+                        <a asp-controller="Kategori" asp-action="KategoriGuncelle" asp-route-id="@item.KategoriId"
+                           class="btn btn-primary">Kategori Güncelle</a>
+                    </td>
+                    <td>
+                        <a asp-controller="Kategori" asp-action="KategoriSil" asp-route-id="@item.KategoriId"
+                           class="btn btn-danger">Kategori Sil</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+
+

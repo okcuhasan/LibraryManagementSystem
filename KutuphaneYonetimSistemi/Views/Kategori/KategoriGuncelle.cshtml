@@ -1,0 +1,26 @@
+﻿@model Kategori
+
+<h2>Kategori Ekleme Sayfası</h2>
+<hr>
+
+<form asp-controller="Kategori" asp-action="KategoriGuncelle" method="post" enctype="multipart/form-data">
+
+    <input type="hidden" asp-for="KategoriId">
+
+    @Html.AntiForgeryToken()
+    <div class="mb-3">
+        <label asp-for="KategoriAdi" class="form-label">Kategori Adı</label>
+        <input asp-for="KategoriAdi" type="text" class="form-control">
+        <span asp-validation-for="KategoriAdi" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Aciklama" class="form-label">Açıklama</label>
+        <input asp-for="Aciklama" type="text" class="form-control">
+        <span asp-validation-for="Aciklama" class="text-danger"></span>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Kategori Güncelle</button>
+</form>
+

@@ -1,0 +1,19 @@
+﻿@model Kategori
+
+@{
+
+}
+
+<h2>Kategori Silme Sayfası</h2>
+<hr>
+<p>
+    <b>@Model.KategoriAdi</b> İsimli Kategoriyi silmek istiyor musunuz?
+
+    <form asp-controller="Kategori" asp-action="KategoriSil" method="post">
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="KategoriId">
+
+        <button type="submit" class="btn btn-danger">Evet</button>
+        <a asp-controller="Kategori" asp-action="KategoriListele" class="btn btn-primary">Hayır</a>
+    </form>
+</p>

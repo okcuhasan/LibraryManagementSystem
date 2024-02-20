@@ -1,0 +1,29 @@
+﻿@model Yayinevi
+
+<h2>Yayinevi Ekleme Sayfası</h2>
+<hr>
+
+<form asp-controller="YayinEvi" asp-action="YayinEviEkle" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    <div class="mb-3">
+        <label asp-for="YayinEviAdi" class="form-label">Yayınevi Adı</label>
+        <input asp-for="YayinEviAdi" type="text" class="form-control">
+        <span asp-validation-for="YayinEviAdi" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="KurulusTarihi" class="form-label">Yayınevi Kuruluş Tarihi</label>
+        <input asp-for="KurulusTarihi" type="date" class="form-control">
+        <span asp-validation-for="KurulusTarihi" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Adres" class="form-label">Yayınevi Adresi</label>
+        <input asp-for="Adres" type="text" class="form-control">
+        <span asp-validation-for="Adres" class="text-danger"></span>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Yayinevi Ekle</button>
+</form>
+

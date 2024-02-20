@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Kitap>
+
+<h2>Kitap Listeleme Kategorisine Göre</h2>
+
+<hr>
+
+<table class="table table-bordered">
+    <h2>Kitap Listesi Kategorisine Göre</h2>
+    <thead>
+        <tr>
+            <th>Kitap Id</th>
+            <th>Kitap Adı</th>
+            <th>Kitap Resmi</th>
+            <th>Kitap Kategorisi</th>
+            <th>Kitap Yazarı</th>
+            <th>Kitap Yayınevi</th>
+            <th>Kitap Fiyatı</th>
+            <th>Kitap Yayın Tarihi</th>
+            <th>Sayfa Sayısı</th>
+            <th>Dil</th>
+            <th></th>
+            <th></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.KitapId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.KitapAdi)</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.ImagePath))
+                        {
+                            <img src="@item.ImagePath" />
+                        }
+                    </td>
+                    <td>@Html.DisplayFor(modelItem => item.Kategori.KategoriAdi)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Yazar.YazarAdiSoyadi)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Yayinevi.YayinEviAdi)</td>
+                    <td>@Html.DisplayFor(modelItem => item.KitapFiyati)</td>
+                    <td>@Html.DisplayFor(modelItem => item.KitapYayinTarihi)</td>
+                    <td>@Html.DisplayFor(modelItem => item.SayfaSayisi)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Dil)</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

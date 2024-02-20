@@ -1,0 +1,25 @@
+﻿@model Yazar
+
+<h2>Yazar Güncelleme Sayfası</h2>
+<hr>
+
+<form asp-controller="Yazar" asp-action="YazarGuncelle" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="YazarId">
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        <label asp-for="YazarAdiSoyadi" class="form-label">Yazar Adı Soyadı</label>
+        <input asp-for="YazarAdiSoyadi" type="text" class="form-control">
+        <span asp-validation-for="YazarAdiSoyadi" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DogumTarihi" class="form-label">Yazar Doğum Tarihi</label>
+        <input asp-for="DogumTarihi" type="date" class="form-control">
+        <span asp-validation-for="DogumTarihi" class="text-danger"></span>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Yazar Güncelle</button>
+</form>
+

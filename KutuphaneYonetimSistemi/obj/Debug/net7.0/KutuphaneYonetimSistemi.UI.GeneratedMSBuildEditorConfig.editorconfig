@@ -1,0 +1,149 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = KutuphaneYonetimSistemi.UI
+build_property.RootNamespace = KutuphaneYonetimSistemi.UI
+build_property.ProjectDir = C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\90554\source\repos\KutuphaneYonetimSistemi\KutuphaneYonetimSistemi
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Admin/AdminKayit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5LYXlpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Admin/KullaniciIadeEdilenKitaplar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VsbGFuaWNpSWFkZUVkaWxlbktpdGFwbGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Admin/OduncAlinanKitapGoruntule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT2R1bmNBbGluYW5LaXRhcEdvcnVudHVsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/GirisYap/GirisYap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lyaXNZYXBcR2lyaXNZYXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Kategori/KategoriEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlcS2F0ZWdvcmlFa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Kategori/KategoriGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlcS2F0ZWdvcmlHdW5jZWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Kategori/KategoriKitaplari.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlcS2F0ZWdvcmlLaXRhcGxhcmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Kategori/KategoriListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlcS2F0ZWdvcmlMaXN0ZWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Kategori/KategoriSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlcS2F0ZWdvcmlTaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Kategori/Listele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlcTGlzdGVsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Kayit/Kayit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F5aXRcS2F5aXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Kitap/KitapArama.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBcS2l0YXBBcmFtYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Kitap/KitapEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBcS2l0YXBFa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Kitap/KitapGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBcS2l0YXBHdW5jZWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Kitap/KitapListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBcS2l0YXBMaXN0ZWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Kitap/KitapSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBcS2l0YXBTaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Odunc/IadeEttiginizKitaplar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2R1bmNcSWFkZUV0dGlnaW5pektpdGFwbGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Odunc/OduncAldiginizKitaplar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2R1bmNcT2R1bmNBbGRpZ2luaXpLaXRhcGxhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/YayinEvi/YayinEviEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWF5aW5FdmlcWWF5aW5FdmlFa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/YayinEvi/YayinEviGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWF5aW5FdmlcWWF5aW5FdmlHdW5jZWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/YayinEvi/YayinEviListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWF5aW5FdmlcWWF5aW5FdmlMaXN0ZWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/YayinEvi/YayinEviSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWF5aW5FdmlcWWF5aW5FdmlTaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Yazar/YazarEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWF6YXJcWWF6YXJFa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Yazar/YazarGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWF6YXJcWWF6YXJHdW5jZWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Yazar/YazarListele.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWF6YXJcWWF6YXJMaXN0ZWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Yazar/YazarSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWF6YXJcWWF6YXJTaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/90554/source/repos/KutuphaneYonetimSistemi/KutuphaneYonetimSistemi/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ed158emv8g

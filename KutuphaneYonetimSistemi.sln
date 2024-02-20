@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutuphaneYonetimSistemi.UI", "KutuphaneYonetimSistemi\KutuphaneYonetimSistemi.UI.csproj", "{A43E3089-144E-4996-A61A-866520003DB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutuphaneYonetimSistemi.Service", "KutuphaneYonetimSistemi.Service\KutuphaneYonetimSistemi.Service.csproj", "{75C2AE4F-B29A-4DF1-BD93-CA93D8B5B42E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutuphaneYonetimSistemi.Data", "KutuphaneYonetimSistemi.Data\KutuphaneYonetimSistemi.Data.csproj", "{F4397001-F6CC-42CD-9090-36728C4209CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A43E3089-144E-4996-A61A-866520003DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A43E3089-144E-4996-A61A-866520003DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A43E3089-144E-4996-A61A-866520003DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A43E3089-144E-4996-A61A-866520003DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75C2AE4F-B29A-4DF1-BD93-CA93D8B5B42E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C2AE4F-B29A-4DF1-BD93-CA93D8B5B42E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C2AE4F-B29A-4DF1-BD93-CA93D8B5B42E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C2AE4F-B29A-4DF1-BD93-CA93D8B5B42E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4397001-F6CC-42CD-9090-36728C4209CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4397001-F6CC-42CD-9090-36728C4209CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4397001-F6CC-42CD-9090-36728C4209CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4397001-F6CC-42CD-9090-36728C4209CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33BE7ACA-4BDC-4DA5-88DF-F38C190AA3C6}
+	EndGlobalSection
+EndGlobal

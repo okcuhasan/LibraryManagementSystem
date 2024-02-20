@@ -1,0 +1,19 @@
+﻿@model Kitap
+
+@{
+
+}
+
+<h2>Kitap Silme Sayfası</h2>
+<hr>
+<p>
+    <b>@Model.KitapAdi</b> İsimli kitabı silmek istiyor musunuz?
+
+    <form asp-controller="Kitap" asp-action="KitapSil" method="post">
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="KitapId">
+
+        <button type="submit" class="btn btn-danger">Evet</button>
+        <a asp-controller="Kitap" asp-action="KitapListele" class="btn btn-primary">Hayır</a>
+    </form>
+</p>

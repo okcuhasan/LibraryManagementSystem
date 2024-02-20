@@ -1,0 +1,29 @@
+﻿@model AdminDTO
+
+<form asp-controller="Admin" asp-action="AdminKayit" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label for="userName">Admin Kullanıcı Adı</label>
+        <input asp-for="UserName" type="text" class="form-control" id="userName">
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Şifre</label>
+        <input asp-for="Sifre" type="password" class="form-control" id="password">
+        <span asp-validation-for="Sifre" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Şifre Tekrar</label>
+        <input asp-for="SifreTekrar" type="password" class="form-control" id="password">
+        <span asp-validation-for="SifreTekrar" class="text-danger"></span>
+    </div>
+
+    <div>
+        <div>
+            <button type="submit" class="btn btn-primary mt-3">Admin Kayıt Oluştur</button>
+        </div>
+    </div>
+</form>

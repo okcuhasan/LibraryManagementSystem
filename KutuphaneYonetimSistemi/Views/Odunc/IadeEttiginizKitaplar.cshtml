@@ -1,0 +1,45 @@
+﻿@model List<ApplicationUser>
+
+<style>
+    .kitap-listesi {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kitap-bilgisi {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 10px;
+        width: 300px;
+    }
+
+    h3 {
+        color: #333;
+    }
+
+    strong {
+        color: #555;
+    }
+</style>
+
+<h1>İade Ettiğiniz Kitaplar</h1>
+
+@if (Model != null && Model.Any())
+{
+    <div class="kitap-listesi">
+        @foreach (var user in Model)
+        {
+            foreach (var iadeKitap in user.Iade)
+            {
+                <div class="kitap-bilgisi">
+                    <h3>@iadeKitap?.Kitap?.KitapAdi</h3>
+                    <p><strong>İade Tarihi:</strong> @iadeKitap?.IadeTarihi</p>
+                </div>
+            }
+        }
+    </div>
+}
+else
+{
+    <p>İade ettiğiniz kitap bulunamamaktadır.</p>
+}

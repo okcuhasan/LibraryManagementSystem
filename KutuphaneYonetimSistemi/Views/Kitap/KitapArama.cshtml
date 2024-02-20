@@ -1,0 +1,67 @@
+﻿@model List<Kitap>
+
+<h2>Kitap Arama Sayfası</h2>
+
+<form method="post" asp-action="KitapArama" class="form-inline mb-3">
+    <div class="form-group">
+        <label for="kitapVeyaYazarAdi" class="mr-2">Kitap veya Yazar Adı</label>
+        <input type="text" name="kitapVeyaYazarAdi" class="form-control mr-2" />
+    </div>
+    <hr />
+    <button type="submit" class="btn btn-primary">Kitap Ara</button>
+</form>
+
+@if (Model != null && Model.Any())
+{
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <caption>Kitap Listesi</caption>
+            <thead class="thead-dark">
+                <tr>
+                    <th>Kitap Id</th>
+                    <th>Kitap Adı</th>
+                    <th>Kitap Görseli</th>
+                    <th>Kitabın Yazarı</th>
+                    <th>Kitabın YayınEvi</th>
+                    <th>Kitap Fiyatı</th>
+                    <th>Kitap Yayınlanma Tarihi</th>
+                    <th>Sayfa Sayısı</th>
+                    <th>Dil</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.KitapId)</td>
+                        <td>@Html.DisplayFor(modelItem => item.KitapAdi)</td>
+                        <td>
+                            @if (!string.IsNullOrEmpty(item.ImagePath))
+                            {
+                                <img src="@item.ImagePath" class="img-thumbnail" style="max-height: 100px; max-width: 100px;" />
+                            }
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.Yazar.YazarAdiSoyadi)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Yayinevi.YayinEviAdi)</td>
+                        <td>@Html.DisplayFor(modelItem => item.KitapFiyati)</td>
+                        <td>@Html.DisplayFor(modelItem => item.KitapYayinTarihi)</td>
+                        <td>@Html.DisplayFor(modelItem => item.SayfaSayisi)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Dil)</td>
+                        <td>
+                            <form asp-controller="Odunc" asp-action="OduncAl" method="post">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="kitapId" value="@item.KitapId">
+                                <button type="submit" class="btn btn-success">Ödünç Al</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <p>Aradığınız kriterlere uygun kitap bulunamadı.</p>
+}

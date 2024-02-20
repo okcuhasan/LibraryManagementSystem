@@ -1,0 +1,60 @@
+﻿@model List<ApplicationUser>
+
+
+<style>
+    .kitap-listesi {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kitap-bilgisi {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 10px;
+        width: 300px;
+    }
+
+    h3 {
+        color: #333;
+    }
+
+    strong {
+        color: #555;
+    }
+
+    .iade-et-btn {
+        background-color: #dc3545;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+</style>
+
+
+<h1>Ödünç Aldığınız Kitaplar</h1>
+
+@if (Model != null && Model.Any())
+{
+    <div class="kitap-listesi">
+        @foreach (var user in Model)
+        {
+            foreach (var oduncKitap in user.Odunc)
+            {
+                <div class="kitap-bilgisi">
+                    <h3>@oduncKitap?.Kitap?.KitapAdi</h3>
+                    <p><strong>Ödünç Alma Tarihi:</strong> @oduncKitap?.OduncAlmaTarihi</p>
+                    <form method="post" asp-action="IadeEt" asp-controller="Odunc" asp-route-id="@oduncKitap?.Kitap?.KitapId">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="iade-et-btn">Kitabı İade Et</button>
+                    </form>
+                </div>
+            }
+        }
+    </div>
+}
+else
+{
+    <p>Ödünç aldığınız kitap bulunamamaktadır.</p>
+}
