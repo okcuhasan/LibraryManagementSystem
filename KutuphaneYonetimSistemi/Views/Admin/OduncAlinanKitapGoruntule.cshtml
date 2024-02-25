@@ -4,6 +4,7 @@
     .odunc-listesi {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .odunc-bilgisi {
@@ -11,18 +12,30 @@
         padding: 15px;
         margin: 10px;
         width: 300px;
+        text-align: center;
+    }
+
+    .kitap-resmi {
+        max-height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
     }
 
     h3 {
         color: #333;
+        margin-bottom: 10px;
     }
 
     strong {
         color: #555;
     }
+
+    p {
+        margin-bottom: 8px;
+    }
 </style>
 
-<h1>Kullanıcıların Ödünç Aldığı Kitaplar</h1>
+<h2>Kullanıcıların Ödünç Aldığı Kitaplar</h2>
 
 @if (Model != null && Model.Any())
 {
@@ -32,9 +45,10 @@
             foreach (var oduncKitap in user.Odunc)
             {
                 <div class="odunc-bilgisi">
-                    <p><strong>Ödünç Alan Kullanıcı:</strong> @oduncKitap?.Kullanici?.UserName</p>
+                    <img src="@oduncKitap?.Kitap?.ImagePath" class="kitap-resmi" alt="Kitap Görseli">
                     <h3>@oduncKitap?.Kitap?.KitapAdi</h3>
-                    <p><strong>Ödünç Aldığı Tarih:</strong> @oduncKitap?.OduncAlmaTarihi</p>
+                    <p><strong>Ödünç Alan Kullanıcı:</strong> @oduncKitap?.Kullanici?.UserName</p>
+                    <p><strong>Ödünç Aldığı Tarih ve Saat:</strong> @oduncKitap?.OduncAlmaTarihi</p>
                 </div>
             }
         }

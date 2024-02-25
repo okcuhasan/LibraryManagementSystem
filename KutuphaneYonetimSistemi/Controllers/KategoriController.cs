@@ -150,33 +150,7 @@ namespace KutuphaneYonetimSistemi.UI.Controllers
             }
         }
 
-        [HttpGet]
-        public async Task<IActionResult> KategoriKitaplari()
-        {
-            ViewBag.Kategoriler = new SelectList(await _context.Kategoriler.ToListAsync(), "KategoriId", "KategoriAdi");
-
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> KategoriKitaplari(Kitap kategori)
-        {
-            return RedirectToAction("Listele", new { kategoriId = kategori.KategoriId});
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> Listele(int kategoriId)
-        {
-            var kitaplar = await _context.Kitaplar
-                .Include(x => x.Yazar)
-                .Include(x => x.Yayinevi)
-                .Include(x => x.Kategori)
-                .Where(x => x.KategoriId == kategoriId)
-                .ToListAsync();
-
-            return View(kitaplar);
-        }
+        
 
 
     }

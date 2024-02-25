@@ -40,7 +40,7 @@ namespace KutuphaneYonetimSistemi.UI.Controllers
 
                     if (kullanici == null)
                     {
-                        ModelState.AddModelError("UserName", "Kullanıcı Adı hatalı!");
+                        ModelState.AddModelError("UserName", "E-Posta adresi hatalı!");
                     }
                     else if (kullanici.Sifre != dto.Sifre)
                     {

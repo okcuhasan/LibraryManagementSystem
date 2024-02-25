@@ -4,6 +4,7 @@
     .iade-listesi {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .iade-bilgisi {
@@ -11,18 +12,30 @@
         padding: 15px;
         margin: 10px;
         width: 300px;
+        text-align: center;
+    }
+
+    .kitap-resmi {
+        max-height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
     }
 
     h3 {
         color: #333;
+        margin-bottom: 10px;
     }
 
     strong {
         color: #555;
     }
+
+    p {
+        margin-bottom: 8px;
+    }
 </style>
 
-<h1>Kullanıcıların İade Ettiği Kitaplar</h1>
+<h2>Kullanıcıların İade Ettikleri Kitaplar</h2>
 
 @if (Model != null && Model.Any())
 {
@@ -32,9 +45,10 @@
             foreach (var iadeKitap in user.Iade)
             {
                 <div class="iade-bilgisi">
-                    <p><strong>İade Eden Kullanıcı:</strong> @iadeKitap?.Kullanici?.UserName</p>
+                    <img src="@iadeKitap?.Kitap?.ImagePath" class="kitap-resmi" alt="Kitap Görseli">
                     <h3>@iadeKitap?.Kitap?.KitapAdi</h3>
-                    <p><strong>İade Ettiği Tarih:</strong> @iadeKitap?.IadeTarihi</p>
+                    <p><strong>İade Eden Kullanıcı:</strong> @iadeKitap?.Kullanici?.UserName</p>
+                    <p><strong>İade Ettiği Tarih ve Saat:</strong> @iadeKitap?.IadeTarihi</p>
                 </div>
             }
         }
@@ -42,5 +56,5 @@
 }
 else
 {
-    <p>Kullanıcı ödünç kitap almamıştır.</p>
+    <p>Kullanıcı kitap iade etmemiştir.</p>
 }

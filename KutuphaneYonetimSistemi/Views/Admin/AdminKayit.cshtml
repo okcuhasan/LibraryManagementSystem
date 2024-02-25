@@ -1,29 +1,25 @@
 ﻿@model AdminDTO
 
-<form asp-controller="Admin" asp-action="AdminKayit" method="post">
+<form asp-controller="Admin" asp-action="AdminKayit" method="post" class="my-4">
     @Html.AntiForgeryToken()
 
     <div class="form-group">
         <label for="userName">Admin Kullanıcı Adı</label>
-        <input asp-for="UserName" type="text" class="form-control" id="userName">
+        <input asp-for="UserName" type="text" class="form-control" id="userName" placeholder="Admin kullanıcı adınızı girin">
         <span asp-validation-for="UserName" class="text-danger"></span>
     </div>
 
     <div class="form-group">
         <label for="password">Şifre</label>
-        <input asp-for="Sifre" type="password" class="form-control" id="password">
+        <input asp-for="Sifre" type="password" class="form-control" id="password" placeholder="Şifrenizi girin">
         <span asp-validation-for="Sifre" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label for="password">Şifre Tekrar</label>
-        <input asp-for="SifreTekrar" type="password" class="form-control" id="password">
+        <label for="passwordTekrar">Şifre Tekrar</label>
+        <input asp-for="SifreTekrar" type="password" class="form-control" id="passwordTekrar" placeholder="Şifrenizi tekrar girin">
         <span asp-validation-for="SifreTekrar" class="text-danger"></span>
     </div>
 
-    <div>
-        <div>
-            <button type="submit" class="btn btn-primary mt-3">Admin Kayıt Oluştur</button>
-        </div>
-    </div>
+    <button type="submit" class="btn btn-primary">Admin Kayıt Oluştur</button>
 </form>

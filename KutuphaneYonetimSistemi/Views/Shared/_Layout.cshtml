@@ -11,86 +11,169 @@
 
     <!-- Custom fonts for this template-->
     <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="~/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
 
     <style>
-        /* Beyaz renk (örneğin) */
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f2f9ff; /* Açık mavi tonu */
+            color: #495057;
+        }
+
         .nav-item, .nav-link {
             color: white !important;
+        }
+
+        .navbar {
+            background-color: #007bff; /* Mavi renk */
+        }
+
+        .navbar-brand {
+            color: white !important;
+        }
+
+        .navbar-light .navbar-toggler-icon {
+            background-color: white;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+            .navbar-nav .nav-link:hover {
+                color: #cce5ff !important; /* Hover durumunda rengi değiştirin */
+            }
+
+        .navbar-toggler {
+            border-color: white;
+        }
+
+        .sidebar {
+            background: linear-gradient(to bottom, #007bff, #0056b3); /* Sidebar için gradient mavi tonu */
+        }
+
+        .sidebar-brand-text {
+            color: white !important;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+            .navbar-dark .navbar-nav .nav-link:hover {
+                color: #cce5ff !important; /* Hover durumunda rengi değiştirin */
+            }
+
+        .topbar {
+            background-color: #ffffff; /* Topbar arkaplan rengi */
+            border-bottom: 1px solid #e3e6f0; /* Topbar alt kenarlık rengi */
+        }
+
+        .footer {
+            background-color: #ffffff; /* Footer arkaplan rengi */
+            border-top: 1px solid #e3e6f0; /* Footer üst kenarlık rengi */
+            padding: 15px 0;
         }
     </style>
 </head>
     <body id="page-top">
         <div id="wrapper">
             <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
-                    
-                    <div class="sidebar-brand-text mx-3">Kütüphane Yönetim Sistemi<sup></sup></div>
-                </a>
-                <hr class="sidebar-divider my-0">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
+                <i class="fas fa-book-open" style="margin-left: 15px;"></i>
+                <div class="sidebar-brand-text mx-3">KÜTÜPHANE YÖNETİM SİSTEMİ<sup></sup></div>
+            </a>
+            <hr class="sidebar-divider my-0">
+
             @if (User.Identity.IsAuthenticated)
             {
                 <li class="nav-item">
-                    <span class="nav-link text-dark font-weight-bold">Hoşgeldin, @User.Identity.Name!</span>
+                    <span class="nav-link font-weight-bold" style="color: #ffffff; background-color: #4e73df; padding: 8px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                        Hoşgeldin, @User.Identity.Name!
+                    </span>
                 </li>
                 <li class="nav-item">
                     <form asp-area="" asp-controller="Cikis" asp-action="CikisYap" method="post">
-                        <button type="submit" class="btn btn-link text-danger font-weight-bold">Çıkış Yap</button>
+                        <button type="submit" class="btn btn-link text-danger font-weight-bold">
+                            <i class="fas fa-power-off"></i> Çıkış Yap
+                        </button>
                     </form>
                 </li>
             }
             else
             {
                 <li class="nav-item">
-                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="GirisYap" asp-action="GirisYap">Giriş Yap</a>
+                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="GirisYap" asp-action="GirisYap">
+                        <i class="fas fa-sign-in-alt"></i> Giriş Yap
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Kayit" asp-action="Kayit">Kullanıcı Kaydı Oluştur</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Admin" asp-action="AdminKayit">Admin Kaydı Oluştur</a>
+                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Kayit" asp-action="Kayit">
+                        <i class="fas fa-user-plus"></i> Kullanıcı Kaydı Oluştur
+                    </a>
                 </li>
             }
-
             @if (User.Identity.IsAuthenticated)
             {
                 <li class="nav-item">
-                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Kitap" asp-action="KitapListele">Kitaplar</a>
+                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Kitap" asp-action="KitapListele">
+                        <i class="fas fa-book"></i> Kitaplar
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Yazar" asp-action="YazarListele">Yazarlar</a>
+                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Yazar" asp-action="YazarListele">
+                        <i class="fas fa-pen-nib"></i> Yazarlar
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="YayinEvi" asp-action="YayinEviListele">Yayinevleri</a>
+                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="YayinEvi" asp-action="YayinEviListele">
+                        <i class="fas fa-building"></i> Yayınevleri
+                    </a>
                 </li>
-                   <li class="nav-item">
-                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Kategori" asp-action="KategoriListele">Kategoriler</a>
+                <li class="nav-item">
+                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Kategori" asp-action="KategoriListele">
+                        <i class="fas fa-tags"></i> Kategoriler
+                    </a>
                 </li>
+
                 @if (User.IsInRole("Kullanici"))
                 {
                     <li class="nav-item">
-                        <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Odunc" asp-action="OduncAldiginizKitaplar">Ödünç Aldığınız Kitaplar</a>
+                        <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Odunc" asp-action="OduncAldiginizKitaplar">
+                            <i class="fas fa-handshake"></i> Ödünç Aldığınız Kitaplar
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Odunc" asp-action="IadeEttiginizKitaplar">İade Ettiğiniz Kitaplar</a>
+                        <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Odunc" asp-action="IadeEttiginizKitaplar">
+                            <i class="fas fa-undo"></i> İade Ettiğiniz Kitaplar
+                        </a>
                     </li>
                 }
-
                 <li class="nav-item">
-                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Kitap" asp-action="KitapArama">Kitap Arayın</a>
+                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Kitap" asp-action="KitapArama">
+                        <i class="fas fa-search"></i> Kitap Arayın
+                    </a>
                 </li>
-
                 @if (User.IsInRole("Admin"))
                 {
                     <li class="nav-item">
-                        <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Admin" asp-action="OduncAlinanKitapGoruntule">Kullanıcıların Ödünç Aldıkları Kitapları Görüntüle</a>
+                        <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Admin" asp-action="AdminKayit">
+                            <i class="fas fa-user-shield"></i> Admin Kaydı Oluştur
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Admin" asp-action="KullaniciIadeEdilenKitaplar">Kullanıcıların İade Ettikleri Kitapları Görüntüle</a>
+                        <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Admin" asp-action="OduncAlinanKitapGoruntule">
+                            <i class="fas fa-handshake"></i> Kullanıcıların Ödünç Aldıkları Kitapları Görüntüle
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Admin" asp-action="KullaniciIadeEdilenKitaplar">
+                            <i class="fas fa-undo"></i> Kullanıcıların İade Ettikleri Kitapları Görüntüle
+                        </a>
                     </li>
                 }
             }
@@ -278,14 +361,15 @@
                
 
                 </div>
-                
-                <footer class="sticky-footer bg-white">
-                    <div class="container my-auto">
-                        <div class="copyright text-center my-auto">
-                            <span>Kütüphane Sistemi - 2024</span>
-                        </div>
+
+            <footer class="sticky-footer bg-white" style="font-size: 20px;">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Kütüphane Yönetim Sistemi - 2024</span>
                     </div>
-                </footer>
+                </div>
+            </footer>
+
                
 
             </div>
@@ -331,11 +415,12 @@
         <script src="~/js/demo/chart-area-demo.js"></script>
     <script src="~/js/demo/chart-pie-demo.js"></script>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted" style="font-size: 20px;">
         <div class="container text-center">
-            &copy; 2024 -  Kütüphane Yönetim Sistemi
+            &copy; 2024 - Kütüphane Yönetim Sistemi
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

@@ -1,47 +1,46 @@
 ﻿@model IEnumerable<Yazar>
 
-<h2>Yazar Ekle</h2>
-<a asp-controller="Yazar" asp-action="YazarEkle" class="btn btn-primary">Yazar Ekle</a>
-<hr>
+<div class="container mt-4">
+    <h2 class="mb-4">Yazar Listesi</h2>
+    <a asp-controller="Yazar" asp-action="YazarEkle" class="btn btn-primary mb-3">Yazar Ekle</a>
+  
 
-<table class="table table-bordered">
-    <h2>Yazar Listesi</h2>
-    <thead>
-        <tr>
-            <th>Yazar Id</th>
-            <th>Yazar Adı Soyadı</th>
-            <th>Yazar Doğum Tarihi</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @if (Model != null)
-        {
-            foreach (var item in Model)
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Yazar Id</th>
+                <th scope="col">Yazar Adı Soyadı</th>
+                <th scope="col">Doğum Tarihi</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.YazarId)</td>
+                        <td>@Html.DisplayFor(modelItem => item.YazarAdiSoyadi)</td>
+                        <td>@Html.DisplayFor(modelItem => item.DogumTarihi)</td>
+                        <td>
+                            <a asp-controller="Yazar" asp-action="YazarGuncelle" asp-route-id="@item.YazarId"
+                               class="btn btn-primary btn-sm">Güncelle</a>
+                        </td>
+                        <td>
+                            <a asp-controller="Yazar" asp-action="YazarSil" asp-route-id="@item.YazarId"
+                               class="btn btn-danger btn-sm">Sil</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
             {
                 <tr>
-                    <td>@Html.DisplayFor(modelItem => item.YazarId)</td>
-                    <td>@Html.DisplayFor(modelItem => item.YazarAdiSoyadi)</td>
-                    <td>@Html.DisplayFor(modelItem => item.DogumTarihi)</td>
-                    <td>
-                        <a asp-controller="Yazar" asp-action="YazarGuncelle" asp-route-id="@item.YazarId"
-                           class="btn btn-primary">Yazar Güncelle</a>
-                    </td>
-                    <td>
-                        <a asp-controller="Yazar" asp-action="YazarSil" asp-route-id="@item.YazarId"
-                           class="btn btn-danger">Yazar Sil</a>
-                    </td>
+                    <td colspan="5">Listelenecek yazar bulunamadı.</td>
                 </tr>
             }
-        }
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
+        </tbody>
+    </table>
+</div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y61eut3Nvdg6gfTb17W9vAsB/OLC3rXSloAbcKiDYIo=",
+  "Hash": "rIyHyWnIj/MvK59IZFSUEB07/pwYbwN7woQ6afWTsIY=",
   "Source": "KutuphaneYonetimSistemi.UI",
   "BasePath": "_content/KutuphaneYonetimSistemi.UI",
   "Mode": "Default",
@@ -119,12 +119,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\images\\indir.jpg",
+      "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\images\\techcareernet_logo.jpg",
       "SourceId": "KutuphaneYonetimSistemi.UI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\",
       "BasePath": "_content/KutuphaneYonetimSistemi.UI",
-      "RelativePath": "images/indir.jpg",
+      "RelativePath": "images/techcareernet_logo.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,7 +133,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\indir.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\techcareernet_logo.jpg"
     },
     {
       "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\img\\undraw_posting_photo.svg",
@@ -1836,6 +1836,23 @@
       "OriginalItemSpec": "wwwroot\\uploads\\0c776ebd-d9d1-4d8b-adc4-9807f7bbfee1_Sefiller.jpg"
     },
     {
+      "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\0d1e983e-1855-41b5-9374-878d2f949aad_çalıkuşu.jpg",
+      "SourceId": "KutuphaneYonetimSistemi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\",
+      "BasePath": "_content/KutuphaneYonetimSistemi.UI",
+      "RelativePath": "uploads/0d1e983e-1855-41b5-9374-878d2f949aad_çalıkuşu.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\0d1e983e-1855-41b5-9374-878d2f949aad_çalıkuşu.jpg"
+    },
+    {
       "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\1020dff5-3f43-4ce7-b28f-04d1e717cf30_Sefiller.jpg",
       "SourceId": "KutuphaneYonetimSistemi.UI",
       "SourceType": "Discovered",
@@ -1902,6 +1919,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\265bc9bc-fdf6-4435-8d5c-7cf815c28270_indir.png"
+    },
+    {
+      "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\2c4eb654-d2bf-4fa4-a6ec-c89b6d1f1306_serenad.jpg",
+      "SourceId": "KutuphaneYonetimSistemi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\",
+      "BasePath": "_content/KutuphaneYonetimSistemi.UI",
+      "RelativePath": "uploads/2c4eb654-d2bf-4fa4-a6ec-c89b6d1f1306_serenad.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\2c4eb654-d2bf-4fa4-a6ec-c89b6d1f1306_serenad.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\345d4045-0465-4b72-b7fa-e09298953322_çalıkuşu.jpg",
+      "SourceId": "KutuphaneYonetimSistemi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\",
+      "BasePath": "_content/KutuphaneYonetimSistemi.UI",
+      "RelativePath": "uploads/345d4045-0465-4b72-b7fa-e09298953322_çalıkuşu.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\345d4045-0465-4b72-b7fa-e09298953322_çalıkuşu.jpg"
     },
     {
       "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\4695f892-003e-4576-a357-db22421d530b_indir.png",
@@ -2040,6 +2091,23 @@
       "OriginalItemSpec": "wwwroot\\uploads\\6c8da225-edad-4c98-bf99-2ba563f72967_indir.png"
     },
     {
+      "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\78f43241-2424-4f15-816c-e05b36e2bfc6_serenad.jpg",
+      "SourceId": "KutuphaneYonetimSistemi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\",
+      "BasePath": "_content/KutuphaneYonetimSistemi.UI",
+      "RelativePath": "uploads/78f43241-2424-4f15-816c-e05b36e2bfc6_serenad.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\78f43241-2424-4f15-816c-e05b36e2bfc6_serenad.jpg"
+    },
+    {
       "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\7f93956f-c3fb-415e-8f26-beb01baba31f_wi_800 (1).jpg",
       "SourceId": "KutuphaneYonetimSistemi.UI",
       "SourceType": "Discovered",
@@ -2125,6 +2193,23 @@
       "OriginalItemSpec": "wwwroot\\uploads\\8b531d2e-bb07-420f-8e2c-61c5546ad0c6_indir.png"
     },
     {
+      "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\9868bc9f-7fdd-486b-be6f-6d5cb89a6a6e_ince memed.jpg",
+      "SourceId": "KutuphaneYonetimSistemi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\",
+      "BasePath": "_content/KutuphaneYonetimSistemi.UI",
+      "RelativePath": "uploads/9868bc9f-7fdd-486b-be6f-6d5cb89a6a6e_ince memed.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\9868bc9f-7fdd-486b-be6f-6d5cb89a6a6e_ince memed.jpg"
+    },
+    {
       "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\9d4a706e-9763-4f97-8917-38348366e857_suç ve ceza.jpg",
       "SourceId": "KutuphaneYonetimSistemi.UI",
       "SourceType": "Discovered",
@@ -2140,6 +2225,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\9d4a706e-9763-4f97-8917-38348366e857_suç ve ceza.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\abd5bac3-e547-4084-b2ef-982b2ebeadc0_Sefiller.jpg",
+      "SourceId": "KutuphaneYonetimSistemi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\",
+      "BasePath": "_content/KutuphaneYonetimSistemi.UI",
+      "RelativePath": "uploads/abd5bac3-e547-4084-b2ef-982b2ebeadc0_Sefiller.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\abd5bac3-e547-4084-b2ef-982b2ebeadc0_Sefiller.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\ae3310ca-56c9-46c4-bc75-79ceb2fe8869_serenad.jpg",
+      "SourceId": "KutuphaneYonetimSistemi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\",
+      "BasePath": "_content/KutuphaneYonetimSistemi.UI",
+      "RelativePath": "uploads/ae3310ca-56c9-46c4-bc75-79ceb2fe8869_serenad.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ae3310ca-56c9-46c4-bc75-79ceb2fe8869_serenad.jpg"
     },
     {
       "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\ae771f3b-7f42-4310-ae74-9610520ce627_indir.jpg",
@@ -2174,6 +2293,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\af136231-e481-45bd-90eb-9c74996d74b5_suç ve ceza.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\bf17ce69-783f-4364-972e-5f8cef2f22bc_çalıkuşu.jpg",
+      "SourceId": "KutuphaneYonetimSistemi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\",
+      "BasePath": "_content/KutuphaneYonetimSistemi.UI",
+      "RelativePath": "uploads/bf17ce69-783f-4364-972e-5f8cef2f22bc_çalıkuşu.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\bf17ce69-783f-4364-972e-5f8cef2f22bc_çalıkuşu.jpg"
     },
     {
       "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\c683381a-a9c2-45a6-b478-ea5a6642d4ef_indir.jpg",
@@ -2276,6 +2412,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\d6762d74-8a64-4a14-bb9b-de8129e8a14a_indir.png"
+    },
+    {
+      "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\db70316b-28a7-4689-81f9-092b38b70314_çalıkuşu.jpg",
+      "SourceId": "KutuphaneYonetimSistemi.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\",
+      "BasePath": "_content/KutuphaneYonetimSistemi.UI",
+      "RelativePath": "uploads/db70316b-28a7-4689-81f9-092b38b70314_çalıkuşu.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\db70316b-28a7-4689-81f9-092b38b70314_çalıkuşu.jpg"
     },
     {
       "Identity": "C:\\Users\\90554\\source\\repos\\KutuphaneYonetimSistemi\\KutuphaneYonetimSistemi\\wwwroot\\uploads\\e61ea5d0-c0ec-4f66-b0e2-6dd5ca541be6_indir.png",

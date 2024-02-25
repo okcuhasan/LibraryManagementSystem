@@ -27,6 +27,13 @@ builder.Services.AddScoped<IGenericRepository<Yazar>, GenericRepository<Yazar>>(
 builder.Services.AddScoped<IGenericRepository<Yayinevi>, GenericRepository<Yayinevi>>();
 builder.Services.AddScoped<IGenericRepository<Kategori>, GenericRepository<Kategori>>();
 
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.Cookie.Name = "KutuphaneSistemiCookie";
+});
+
+
 var app = builder.Build();
 
 

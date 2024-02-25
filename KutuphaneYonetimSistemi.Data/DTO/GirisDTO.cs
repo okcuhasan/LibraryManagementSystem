@@ -9,7 +9,7 @@ namespace KutuphaneYonetimSistemi.Data.DTO
 {
     public class GirisDTO
     {
-        [Required(ErrorMessage = "Kullanıcı Adı alanı boş geçilemez!")]
+        [Required(ErrorMessage = "E-Posta alanı boş geçilemez!")]
         public string UserName { get; set; }
         [Required(ErrorMessage = "Şifre alanı boş geçilemez!")]
         public string Sifre { get; set; }

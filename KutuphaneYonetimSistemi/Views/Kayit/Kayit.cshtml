@@ -1,50 +1,44 @@
 ﻿@model ApplicationUser
 
 
-<form asp-controller="Kayit" asp-action="Kayit" method="post">
+<form asp-controller="Kayit" asp-action="Kayit" method="post" class="my-4">
     @Html.AntiForgeryToken()
+
     <div class="form-group">
-        <label for="exampleFormControlInput1">Ad</label>
-        <input asp-for="Ad" type="text" class="form-control" id="exampleFormControlInput1">
+        <label for="ad">Ad</label>
+        <input asp-for="Ad" type="text" class="form-control" id="ad" placeholder="Adınız">
         <span asp-validation-for="Ad" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label for="exampleFormControlInput1">Soyad</label>
-        <input asp-for="SoyAd" type="text" class="form-control" id="exampleFormControlInput1">
+        <label for="soyad">Soyad</label>
+        <input asp-for="SoyAd" type="text" class="form-control" id="soyad" placeholder="Soyadınız">
         <span asp-validation-for="SoyAd" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label for="exampleFormControlInput1">Kullanıcı Adı</label>
-        <input asp-for="UserName" type="text" class="form-control" id="exampleFormControlInput1">
-        <span asp-validation-for="UserName" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label for="exampleFormControlInput1">E-Posta</label>
-        <input asp-for="EMailAdresi" type="email" class="form-control" id="exampleFormControlInput1">
+        <label for="email">E-Posta</label>
+        <input asp-for="EMailAdresi" type="email" class="form-control" id="email" placeholder="E-Posta adresiniz">
         <span asp-validation-for="EMailAdresi" class="text-danger"></span>
     </div>
 
-    <div class="form-group">
-        <label for="exampleFormControlInput1">Şifre</label>
-        <input asp-for="Sifre" type="password" class="form-control" id="exampleFormControlInput1">
-        <span asp-validation-for="Sifre" class="text-danger"></span>
-    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="sifre">Şifre</label>
+            <input asp-for="Sifre" type="password" class="form-control" id="sifre" placeholder="Şifreniz">
+            <span asp-validation-for="Sifre" class="text-danger"></span>
+        </div>
 
-    <div class="form-group">
-        <label for="exampleFormControlInput1">Şifre Tekrar</label>
-        <input asp-for="SifreTekrar" type="password" class="form-control" id="exampleFormControlInput1">
-        <span asp-validation-for="SifreTekrar" class="text-danger"></span>
-    </div>
-
-    <div>
-        <div>
-            <button type="submit" class="btn btn-primary mt-3" asp-controller="Kayit" asp-action="Kayit">Kayit Oluştur</button>
+        <div class="form-group col-md-6">
+            <label for="sifreTekrar">Şifre Tekrar</label>
+            <input asp-for="SifreTekrar" type="password" class="form-control" id="sifreTekrar" placeholder="Şifrenizi tekrar girin">
+            <span asp-validation-for="SifreTekrar" class="text-danger"></span>
         </div>
     </div>
+
+    <button type="submit" class="btn btn-primary">Kayıt Oluştur</button>
 </form>
+
 
 
 

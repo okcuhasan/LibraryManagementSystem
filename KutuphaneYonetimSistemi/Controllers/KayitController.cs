@@ -19,6 +19,7 @@ namespace KutuphaneYonetimSistemi.UI.Controllers
             return View();
         }
 
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Kayit(ApplicationUser model)
@@ -31,7 +32,7 @@ namespace KutuphaneYonetimSistemi.UI.Controllers
                     SoyAd = model.SoyAd,
                     Sifre = model.Sifre,
                     SifreTekrar = model.SifreTekrar,
-                    UserName = model.UserName,
+                    UserName = model.EMailAdresi,
                     Email = model.EMailAdresi,
                     EMailAdresi = model.EMailAdresi
                 };
@@ -87,6 +88,7 @@ namespace KutuphaneYonetimSistemi.UI.Controllers
 
             return View(model);
         }
+
 
     }
 }
