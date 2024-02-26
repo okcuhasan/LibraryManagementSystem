@@ -1,67 +1,182 @@
-﻿@model List<Kitap>
+﻿<script src="~/js/yorum.js"></script>
 
-<h2>Kitap Arama Sayfası</h2>
+@model IEnumerable<Kitap>
 
-<form method="post" asp-action="KitapArama" class="form-inline mb-3">
-    <div class="form-group">
-        <label for="kitapVeyaYazarAdi" class="mr-2">Kitap veya Yazar Adı</label>
-        <input type="text" name="kitapVeyaYazarAdi" class="form-control mr-2" />
-    </div>
-    <hr />
-    <button type="submit" class="btn btn-primary">Kitap Ara</button>
-</form>
+<div class="container mt-4">
+    <h2 class="mb-4">Kitap Arama Sayfası</h2>
+
+    <form method="post" asp-action="KitapArama" class="mb-3">
+        <div class="form-row align-items-center">
+            <div class="col-md-6 mb-2">
+                <label for="kitapVeyaYazarAdi" class="sr-only">Kitap veya Yazar Adı</label>
+                <input type="text" name="kitapVeyaYazarAdi" class="form-control" placeholder="Kitap veya Yazar Adı" />
+            </div>
+            <div class="col-md-3 mb-2">
+                <button type="submit" class="btn btn-primary">Kitap Ara</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<style>
+
+    .yorum-listesi {
+        margin-top: 20px;
+    }
+
+    .kitap-listesi {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .kitap-bilgisi {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 10px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .kitap-resmi {
+        max-height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    strong {
+        color: #555;
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    .btn-info {
+        margin-top: 5px;
+    }
+
+    .odunc-class {
+        margin-top: 5px;
+    }
+
+    .cevap-submit-btn {
+        margin-top: 10px;
+    }
+
+    .yorum-listesi {
+        margin-top: 20px;
+    }
+
+    .yorum {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #f8f9fa; /* Light grey background */
+        border-radius: 5px;
+    }
+
+        .yorum strong {
+            color: #007bff; /* Blue color for user names */
+            margin-right: 5px;
+        }
+
+    .cevap {
+        margin-left: 20px; /* Indent the replies */
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #e2e3e5; /* Lighter grey background for replies */
+        border-radius: 5px;
+    }
+
+        .cevap strong {
+            color: #28a745; /* Green color for reply user names */
+            margin-right: 5px;
+        }
+
+    .cevap-ver-btn {
+        margin-bottom: 10px;
+    }
+</style>
 
 @if (Model != null && Model.Any())
 {
-    <div class="table-responsive">
-        <table class="table table-bordered table-hover">
-            <caption>Kitap Listesi</caption>
-            <thead class="thead-dark">
-                <tr>
-                    <th>Kitap Id</th>
-                    <th>Kitap Adı</th>
-                    <th>Kitap Görseli</th>
-                    <th>Kitabın Yazarı</th>
-                    <th>Kitabın YayınEvi</th>
-                    <th>Kitap Fiyatı</th>
-                    <th>Kitap Yayınlanma Tarihi</th>
-                    <th>Sayfa Sayısı</th>
-                    <th>Dil</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
+    <div class="kitap-listesi">
+        @foreach (var kitap in Model)
+        {
+            <div class="kitap-bilgisi">
+                <h3>@Html.DisplayFor(modelItem => kitap.KitapAdi)</h3>
+                @if (!string.IsNullOrEmpty(kitap.ImagePath))
                 {
-                    <tr>
-                        <td>@Html.DisplayFor(modelItem => item.KitapId)</td>
-                        <td>@Html.DisplayFor(modelItem => item.KitapAdi)</td>
-                        <td>
-                            @if (!string.IsNullOrEmpty(item.ImagePath))
-                            {
-                                <img src="@item.ImagePath" class="img-thumbnail" style="max-height: 100px; max-width: 100px;" />
-                            }
-                        </td>
-                        <td>@Html.DisplayFor(modelItem => item.Yazar.YazarAdiSoyadi)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Yayinevi.YayinEviAdi)</td>
-                        <td>@Html.DisplayFor(modelItem => item.KitapFiyati)</td>
-                        <td>@Html.DisplayFor(modelItem => item.KitapYayinTarihi)</td>
-                        <td>@Html.DisplayFor(modelItem => item.SayfaSayisi)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Dil)</td>
-                        <td>
-                            <form asp-controller="Odunc" asp-action="OduncAl" method="post">
-                                @Html.AntiForgeryToken()
-                                <input type="hidden" name="kitapId" value="@item.KitapId">
-                                <button type="submit" class="btn btn-success">Ödünç Al</button>
-                            </form>
-                        </td>
-                    </tr>
+                    <img src="@kitap.ImagePath" class="kitap-resmi" alt="Kitap Görseli">
                 }
-            </tbody>
-        </table>
+                <p><strong>Yazar:</strong> @Html.DisplayFor(modelItem => kitap.Yazar.YazarAdiSoyadi)</p>
+                <p><strong>Yayınevi:</strong> @Html.DisplayFor(modelItem => kitap.Yayinevi.YayinEviAdi)</p>
+                <p><strong>Kategori:</strong> @Html.DisplayFor(modelItem => kitap.Kategori.KategoriAdi)</p>
+                <p><strong>Fiyat:</strong> @Html.DisplayFor(modelItem => kitap.KitapFiyati)</p>
+                <p><strong>Yayınlanma Tarihi:</strong> @Html.DisplayFor(modelItem => kitap.KitapYayinTarihi)</p>
+                <p><strong>Sayfa Sayısı:</strong> @Html.DisplayFor(modelItem => kitap.SayfaSayisi)</p>
+                <p><strong>Dil:</strong> @Html.DisplayFor(modelItem => kitap.Dil)</p>
+                <div style="text-align: center;">
+                    <form asp-controller="Odunc" asp-action="OduncAl" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="kitapId" value="@kitap.KitapId">
+                        @if (User.IsInRole("Kullanici"))
+                        {
+                            <button type="submit" class="btn btn-success odunc-class">Ödünç Al</button>
+                        }
+                    </form>
+                    @if (User.IsInRole("Kullanici"))
+                    {
+                        <button class="btn btn-info yorum-ekle-btn" data-kitapid="@kitap.KitapId">Yorum Ekle</button>
+                    }
+                    <div class="yorum-section" data-kitapid="@kitap.KitapId" style="display:none">
+                        <form class="yorum-form">
+                            <div class="form-group">
+                                <label for="yorumIcerigi_@kitap.KitapId">Yorum İçeriği</label>
+                                <textarea class="form-control" rows="3" id="yorumIcerigi_@kitap.KitapId"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-success yorum-submit-btn" data-kitapid="@kitap.KitapId">Yorum Ekle</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="yorum-listesi">
+                    @foreach (var yorum in kitap.Yorumlar)
+                    {
+                        <div class="yorum">
+                            <p><strong>@($"{yorum.Kullanici?.Ad} {yorum.Kullanici?.SoyAd}"):</strong> @yorum.YorumIcerigi</p>
+                            @if (User.IsInRole("Kullanici"))
+                            {
+                                <button class="btn btn-info cevap-ver-btn" data-yorumid="@yorum.YorumId">Cevap Ekle</button>
+                            }
+                            <div class="cevap-form" data-yorumid="@yorum.YorumId" style="display:none">
+                                <textarea class="form-control" rows="2" id="cevapIcerigi_@yorum.YorumId"></textarea>
+                                <button type="button" class="btn btn-success cevap-submit-btn" data-yorumid="@yorum.YorumId">Cevap Ekle</button>
+                            </div>
+
+                            <div class="cevap-listesi">
+                                @foreach (var cevap in yorum.YorumCevaplari)
+                                {
+                                    <div class="cevap">
+                                        <p><strong>@($"{cevap.Kullanici?.Ad} {cevap.Kullanici?.SoyAd}"):</strong> @cevap.CevapIcerigi</p>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
     </div>
 }
 else
 {
-    <p>Aradığınız kriterlere uygun kitap bulunamadı.</p>
+    <p>Kitap bulunamamıştır.</p>
 }

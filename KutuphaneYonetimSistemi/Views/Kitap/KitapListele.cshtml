@@ -1,113 +1,178 @@
 ﻿<script src="~/js/yorum.js"></script>
 
 @model IEnumerable<Kitap>
+
+<style>
+
+    .yorum-listesi {
+        margin-top: 20px;
+    }
+
+    .kitap-listesi {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .kitap-bilgisi {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 10px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .kitap-resmi {
+        max-height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    strong {
+        color: #555;
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    .btn-info {
+        margin-top: 5px;
+    }
+
+    .odunc-class {
+        margin-top: 5px;
+    }
+
+    .cevap-submit-btn {
+        margin-top: 10px;
+    }
+
+    .yorum-listesi {
+        margin-top: 20px;
+    }
+
+    .yorum {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #f8f9fa; /* Light grey background */
+        border-radius: 5px;
+    }
+
+        .yorum strong {
+            color: #007bff; /* Blue color for user names */
+            margin-right: 5px;
+        }
+
+    .cevap {
+        margin-left: 20px; /* Indent the replies */
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #e2e3e5; /* Lighter grey background for replies */
+        border-radius: 5px;
+    }
+
+        .cevap strong {
+            color: #28a745; /* Green color for reply user names */
+            margin-right: 5px;
+        }
+
+        .cevap-ver-btn{
+            margin-bottom: 10px;
+        }
+</style>
+
+
 <h2>Kitap Listesi</h2>
+ @if (User.IsInRole("Admin"))
+{
 <a asp-controller="Kitap" asp-action="KitapEkle" class="btn btn-primary mb-3">Kitap Ekle</a>
+}
 
-<div class="table-responsive">
-    <table class="table table-bordered table-hover">
-
-        <thead class="thead-dark">
-            <tr>
-                <th>Kitap Id</th>
-                <th>Kitap Adı</th>
-                <th>Kitap Görseli</th>
-                <th>Kitabın Yazarı</th>
-                <th>Kitabın YayınEvi</th>
-                <th>Kitabın Kategorisi</th>
-                <th>Kitap Fiyatı</th>
-                <th>Kitap Yayınlanma Tarihi</th>
-                <th>Sayfa Sayısı</th>
-                <th>Dil</th>
-                <th>Yorumlar</th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model != null)
-            {
-                foreach (var item in Model)
+@if (Model != null && Model.Any())
+{
+    <div class="kitap-listesi">
+        @foreach (var kitap in Model)
+        {
+            <div class="kitap-bilgisi">
+                <h3>@Html.DisplayFor(modelItem => kitap.KitapAdi)</h3>
+                @if (!string.IsNullOrEmpty(kitap.ImagePath))
                 {
-                    <tr>
-                        <td>@Html.DisplayFor(modelItem => item.KitapId)</td>
-                        <td>@Html.DisplayFor(modelItem => item.KitapAdi)</td>
-                        <td>
-                            @if (!string.IsNullOrEmpty(item.ImagePath))
-                            {
-                                <img src="@item.ImagePath" class="img-thumbnail" style="max-height: 100px; max-width: 100px;" />
-                            }
-                        </td>
-                        <td>@Html.DisplayFor(modelItem => item.Yazar.YazarAdiSoyadi)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Yayinevi.YayinEviAdi)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Kategori.KategoriAdi)</td>
-                        <td>@Html.DisplayFor(modelItem => item.KitapFiyati)</td>
-                        <td>@Html.DisplayFor(modelItem => item.KitapYayinTarihi)</td>
-                        <td>@Html.DisplayFor(modelItem => item.SayfaSayisi)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Dil)</td>
-                        <td>
-                            @if (item.Yorumlar != null && item.Yorumlar.Any())
-                            {
-                                <div class="list-group">
-                                    @foreach (var yorum in item.Yorumlar)
-                                    {
-                                        <div class="list-group-item">
-                                            <h6 class="mb-1">@yorum.Kullanici?.Ad</h6>
-                                            <p class="mb-1">@yorum.YorumIcerigi</p>
-
-                                            <button class="btn btn-info cevap-ver-btn" data-yorumid="@yorum.YorumId">Cevap Ver</button>
-                                            <div class="cevap-form" data-yorumid="@yorum.YorumId" style="display:none">
-                                                <textarea class="form-control" rows="2" id="cevapIcerigi_@yorum.YorumId"></textarea>
-                                                <button type="button" class="btn btn-success cevap-submit-btn" data-yorumid="@yorum.YorumId">Cevap Gönder</button>
-                                            </div>
-                                            @if (yorum.YorumCevaplari != null && yorum.YorumCevaplari.Any())
-                                            {
-                                                <div class="list-group mt-2">
-                                                    @foreach (var cevap in yorum.YorumCevaplari)
-                                                    {
-                                                        <div class="list-group-item">
-                                                            <h6 class="mb-1">@cevap.Kullanici?.Ad</h6>
-                                                            <p class="mb-1">@cevap.CevapIcerigi</p>
-                                                        </div>
-                                                    }
-                                                </div>
-                                            }
-                                        </div>
-                                    }
-                                </div>
-                            }
-                        </td>
-                        <td>
-                            <a asp-controller="Kitap" asp-action="KitapGuncelle" asp-route-id="@item.KitapId" class="btn btn-primary">Güncelle</a>
-                        </td>
-                        <td>
-                            <a asp-controller="Kitap" asp-action="KitapSil" asp-route-id="@item.KitapId" class="btn btn-danger">Sil</a>
-                        </td>
-                        <td>
-                            <form asp-controller="Odunc" asp-action="OduncAl" method="post">
-                                @Html.AntiForgeryToken()
-                                <input type="hidden" name="kitapId" value="@item.KitapId">
-                                <button type="submit" class="btn btn-success">Ödünç Al</button>
-                            </form>
-                        </td>
-                        <td>
-                            <button class="btn btn-info yorum-ekle-btn" data-kitapid="@item.KitapId">Yorum Ekle</button>
-                        </td>
-                    </tr>
-                    <tr class="yorum-section" data-kitapid="@item.KitapId" style="display:none">
-                        <td colspan="12">
-                            <form class="yorum-form">
-                                <div class="form-group">
-                                    <label for="yorumIcerigi_@item.KitapId">Yorum İçeriği</label>
-                                    <textarea class="form-control" rows="3" id="yorumIcerigi_@item.KitapId"></textarea>
-                                </div>
-                                <button type="button" class="btn btn-success yorum-submit-btn" data-kitapid="@item.KitapId">Yorum Ekle</button>
-                            </form>
-                        </td>
-                    </tr>
+                    <img src="@kitap.ImagePath" class="kitap-resmi" alt="Kitap Görseli">
                 }
-            }
-        </tbody>
-    </table>
-</div>
+                <p><strong>Yazar:</strong> @Html.DisplayFor(modelItem => kitap.Yazar.YazarAdiSoyadi)</p>
+                <p><strong>Yayınevi:</strong> @Html.DisplayFor(modelItem => kitap.Yayinevi.YayinEviAdi)</p>
+                <p><strong>Kategori:</strong> @Html.DisplayFor(modelItem => kitap.Kategori.KategoriAdi)</p>
+                <p><strong>Fiyat:</strong> @Html.DisplayFor(modelItem => kitap.KitapFiyati)</p>
+                <p><strong>Yayınlanma Tarihi:</strong> @Html.DisplayFor(modelItem => kitap.KitapYayinTarihi)</p>
+                <p><strong>Sayfa Sayısı:</strong> @Html.DisplayFor(modelItem => kitap.SayfaSayisi)</p>
+                <p><strong>Dil:</strong> @Html.DisplayFor(modelItem => kitap.Dil)</p>
+                <div style="text-align: center;">
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a asp-controller="Kitap" asp-action="KitapGuncelle" asp-route-id="@kitap.KitapId" class="btn btn-primary">Güncelle</a>
+                        <a asp-controller="Kitap" asp-action="KitapSil" asp-route-id="@kitap.KitapId" class="btn btn-danger">Sil</a>
+                    }
+                    <form asp-controller="Odunc" asp-action="OduncAl" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="kitapId" value="@kitap.KitapId">
+                        @if (User.IsInRole("Kullanici"))
+                        {
+                            <button type="submit" class="btn btn-success odunc-class">Ödünç Al</button>
+                        }
+                    </form>
+                    @if (User.IsInRole("Kullanici"))
+                    {
+                        <button class="btn btn-info yorum-ekle-btn" data-kitapid="@kitap.KitapId">Yorum Ekle</button>
+                    }
+                    <div class="yorum-section" data-kitapid="@kitap.KitapId" style="display:none">
+                        <form class="yorum-form">
+                            <div class="form-group">
+                                <label for="yorumIcerigi_@kitap.KitapId">Yorum İçeriği</label>
+                                <textarea class="form-control" rows="3" id="yorumIcerigi_@kitap.KitapId"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-success yorum-submit-btn" data-kitapid="@kitap.KitapId">Yorum Ekle</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="yorum-listesi">
+                    @foreach (var yorum in kitap.Yorumlar)
+                    {
+                        <div class="yorum">
+                            <p><strong>@($"{yorum.Kullanici?.Ad} {yorum.Kullanici?.SoyAd}"):</strong> @yorum.YorumIcerigi</p>
+                            @if (User.IsInRole("Kullanici"))
+                            {
+                                <button class="btn btn-info cevap-ver-btn" data-yorumid="@yorum.YorumId">Cevap Ekle</button>
+                            }
+                            <div class="cevap-form" data-yorumid="@yorum.YorumId" style="display:none">
+                                <textarea class="form-control" rows="2" id="cevapIcerigi_@yorum.YorumId"></textarea>
+                                <button type="button" class="btn btn-success cevap-submit-btn" data-yorumid="@yorum.YorumId">Cevap Ekle</button>
+                            </div>
+
+                            <div class="cevap-listesi">
+                                @foreach (var cevap in yorum.YorumCevaplari)
+                                {
+                                    <div class="cevap">
+                                        <p><strong>@($"{cevap.Kullanici?.Ad} {cevap.Kullanici?.SoyAd}"):</strong> @cevap.CevapIcerigi</p>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>Kitap bulunamamıştır.</p>
+}

@@ -2,9 +2,10 @@
 
 <div class="container mt-4">
     <h2 class="mb-4">Yayınevi Listesi</h2>
-
-    <a asp-controller="YayinEvi" asp-action="YayinEviEkle" class="btn btn-primary mb-3">Yayınevi Ekle</a>
-
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-controller="YayinEvi" asp-action="YayinEviEkle" class="btn btn-primary mb-3">Yayınevi Ekle</a>
+    }
     <table class="table table-bordered">
         <thead>
             <tr>
@@ -26,14 +27,20 @@
                         <td>@Html.DisplayFor(modelItem => item.YayinEviAdi)</td>
                         <td>@Html.DisplayFor(modelItem => item.KurulusTarihi)</td>
                         <td>@Html.DisplayFor(modelItem => item.Adres)</td>
-                        <td>
-                            <a asp-controller="YayinEvi" asp-action="YayinEviGuncelle" asp-route-id="@item.YayinEviId"
-                               class="btn btn-primary btn-sm">Güncelle</a>
-                        </td>
-                        <td>
-                            <a asp-controller="YayinEvi" asp-action="YayinEviSil" asp-route-id="@item.YayinEviId"
-                               class="btn btn-danger btn-sm">Sil</a>
-                        </td>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <td>
+                                <a asp-controller="YayinEvi" asp-action="YayinEviGuncelle" asp-route-id="@item.YayinEviId"
+                                class="btn btn-primary btn-sm">Güncelle</a>
+                            </td>
+                        }
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <td>
+                                <a asp-controller="YayinEvi" asp-action="YayinEviSil" asp-route-id="@item.YayinEviId"
+                                class="btn btn-danger btn-sm">Sil</a>
+                            </td>
+                        }
                     </tr>
                 }
             }

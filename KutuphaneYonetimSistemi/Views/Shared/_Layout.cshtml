@@ -139,7 +139,11 @@
                         <i class="fas fa-tags"></i> Kategoriler
                     </a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Kitap" asp-action="KitapArama">
+                        <i class="fas fa-search"></i> Kitap Arayın
+                    </a>
+                </li>
                 @if (User.IsInRole("Kullanici"))
                 {
                     <li class="nav-item">
@@ -153,11 +157,6 @@
                         </a>
                     </li>
                 }
-                <li class="nav-item">
-                    <a class="nav-link text-primary font-weight-bold" asp-area="" asp-controller="Kitap" asp-action="KitapArama">
-                        <i class="fas fa-search"></i> Kitap Arayın
-                    </a>
-                </li>
                 @if (User.IsInRole("Admin"))
                 {
                     <li class="nav-item">

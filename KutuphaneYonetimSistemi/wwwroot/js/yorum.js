@@ -1,13 +1,14 @@
 ﻿$(document).ready(function () {
-    $(".yorum-ekle-btn").on("click", function () {
+    $(".btn-info").on("click", function () {
         var kitapId = $(this).data("kitapid");
 
-        $(".yorum-section").not("[data-kitapid=" + kitapId + "]").hide(); // tüm yorum bölümlerini gizliyorum
+        $(".yorum-section").not("[data-kitapid=" + kitapId + "]").hide(); // Tüm yorum bölümlerini gizliyorum
 
-        $(".yorum-section[data-kitapid=" + kitapId + "]").toggle(); // gizli elementlere tıklandığında görünür hale gelmelerini sağlıyorum.
-        // tıklanan bölümün section unu açıyorum
+        $(".yorum-section[data-kitapid=" + kitapId + "]").toggle(); // Gizli elementlere tıklandığında görünür hale gelmelerini sağlıyorum.
+        // Tıklanan bölümün section'unu açıyorum
     });
-    $(".yorum-submit-btn").on("click", function () { // yorum ekle butonuna basınca kitapId ve yorumIcerigi değerlerini alıyorum
+
+    $(".yorum-submit-btn").on("click", function () { // Yorum ekle butonuna basınca kitapId ve yorumIcerigi değerlerini alıyorum
         var kitapId = $(this).data("kitapid");
         var yorumIcerigi = $("#yorumIcerigi_" + kitapId).val();
 

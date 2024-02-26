@@ -45,8 +45,8 @@
             foreach (var iadeKitap in user.Iade)
             {
                 <div class="iade-bilgisi">
-                    <img src="@iadeKitap?.Kitap?.ImagePath" class="kitap-resmi" alt="Kitap Görseli">
                     <h3>@iadeKitap?.Kitap?.KitapAdi</h3>
+                    <img src="@iadeKitap?.Kitap?.ImagePath" class="kitap-resmi" alt="Kitap Görseli">
                     <p><strong>İade Eden Kullanıcı:</strong> @iadeKitap?.Kullanici?.UserName</p>
                     <p><strong>İade Ettiği Tarih ve Saat:</strong> @iadeKitap?.IadeTarihi</p>
                 </div>

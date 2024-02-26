@@ -1904,6 +1904,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\660bf2d4-4d58-411d-89da-dca23b665c7d_wi_800.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\68b74625-ef41-4e46-ac41-d9e44fa1e4a9_ince memed.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>KutuphaneYonetimSistemi.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KutuphaneYonetimSistemi.UI</BasePath>
+      <RelativePath>uploads/68b74625-ef41-4e46-ac41-d9e44fa1e4a9_ince memed.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\68b74625-ef41-4e46-ac41-d9e44fa1e4a9_ince memed.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\6a16df11-f0a1-4824-99a9-7a08e011cd9c_çalıkuşu.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>KutuphaneYonetimSistemi.UI</SourceId>
@@ -2064,6 +2080,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\9d4a706e-9763-4f97-8917-38348366e857_suç ve ceza.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\aab1e26a-fe89-4554-a264-e700338a4ee2_serenad.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>KutuphaneYonetimSistemi.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KutuphaneYonetimSistemi.UI</BasePath>
+      <RelativePath>uploads/aab1e26a-fe89-4554-a264-e700338a4ee2_serenad.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\aab1e26a-fe89-4554-a264-e700338a4ee2_serenad.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\abd5bac3-e547-4084-b2ef-982b2ebeadc0_Sefiller.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>KutuphaneYonetimSistemi.UI</SourceId>
@@ -2128,6 +2160,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\af136231-e481-45bd-90eb-9c74996d74b5_suç ve ceza.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\ba20d0e0-49ad-4a7f-a7c0-df560f7beaf3_suç ve ceza.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>KutuphaneYonetimSistemi.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KutuphaneYonetimSistemi.UI</BasePath>
+      <RelativePath>uploads/ba20d0e0-49ad-4a7f-a7c0-df560f7beaf3_suç ve ceza.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\ba20d0e0-49ad-4a7f-a7c0-df560f7beaf3_suç ve ceza.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\bf17ce69-783f-4364-972e-5f8cef2f22bc_çalıkuşu.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>KutuphaneYonetimSistemi.UI</SourceId>
@@ -2143,6 +2191,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\bf17ce69-783f-4364-972e-5f8cef2f22bc_çalıkuşu.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\c0428703-5c63-4be7-9d23-877037d5b7c4_çalıkuşu.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>KutuphaneYonetimSistemi.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KutuphaneYonetimSistemi.UI</BasePath>
+      <RelativePath>uploads/c0428703-5c63-4be7-9d23-877037d5b7c4_çalıkuşu.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\c0428703-5c63-4be7-9d23-877037d5b7c4_çalıkuşu.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\c683381a-a9c2-45a6-b478-ea5a6642d4ef_indir.jpg))">
       <SourceType>Package</SourceType>

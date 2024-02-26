@@ -27,15 +27,20 @@ namespace KutuphaneYonetimSistemi.UI.Controllers
         [Authorize]
         public async Task<IActionResult> KitapListele()
         {
-            var kitaplar = await _context.Kitaplar.Include(x => x.Yazar)
+            var kitaplar = await _context.Kitaplar
+                .Include(x => x.Yazar)
                 .Include(x => x.Yayinevi)
                 .Include(x => x.Kategori)
                 .Include(x => x.Yorumlar)
-                .ThenInclude(x => x.Kullanici)
+                    .ThenInclude(yorum => yorum.Kullanici)
+                .Include(x => x.Yorumlar)
+                    .ThenInclude(yorum => yorum.YorumCevaplari)
+                        .ThenInclude(cevap => cevap.Kullanici)
                 .ToListAsync();
 
             return View(kitaplar);
         }
+
 
         [HttpGet]
         [Authorize(Roles = "Admin")]
@@ -216,6 +221,12 @@ namespace KutuphaneYonetimSistemi.UI.Controllers
             var kitaplar = await _context.Kitaplar
                 .Include(x => x.Yazar)
                 .Include(x => x.Yayinevi)
+                .Include(x => x.Kategori)
+                .Include(x => x.Yorumlar)
+                    .ThenInclude(yorum => yorum.Kullanici)
+                .Include(x => x.Yorumlar)
+                    .ThenInclude(yorum => yorum.YorumCevaplari)
+                        .ThenInclude(cevap => cevap.Kullanici)
                 .Where(x => x.KitapAdi == kitapVeyaYazarAdi || x.Yazar.YazarAdiSoyadi == kitapVeyaYazarAdi).ToListAsync();
 
             if(kitaplar == null)

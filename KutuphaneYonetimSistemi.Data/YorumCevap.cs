@@ -14,10 +14,11 @@ namespace KutuphaneYonetimSistemi.Data
 
         public string? CevapIcerigi { get; set; }
 
-        public int YorumId { get; set; }
-        public Yorum Yorum { get; set; }
+        public int? YorumId { get; set; }
+        public Yorum? Yorum { get; set; }
 
-        public string KullaniciId { get; set; }
-        public ApplicationUser Kullanici { get; set; }
+        public string? KullaniciId { get; set; }
+        public ApplicationUser? Kullanici { get; set; }
     }
+    
 }

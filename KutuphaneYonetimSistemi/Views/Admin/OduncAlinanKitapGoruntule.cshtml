@@ -45,8 +45,8 @@
             foreach (var oduncKitap in user.Odunc)
             {
                 <div class="odunc-bilgisi">
-                    <img src="@oduncKitap?.Kitap?.ImagePath" class="kitap-resmi" alt="Kitap Görseli">
                     <h3>@oduncKitap?.Kitap?.KitapAdi</h3>
+                    <img src="@oduncKitap?.Kitap?.ImagePath" class="kitap-resmi" alt="Kitap Görseli">
                     <p><strong>Ödünç Alan Kullanıcı:</strong> @oduncKitap?.Kullanici?.UserName</p>
                     <p><strong>Ödünç Aldığı Tarih ve Saat:</strong> @oduncKitap?.OduncAlmaTarihi</p>
                 </div>

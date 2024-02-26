@@ -2,7 +2,10 @@
 
 <div class="container mt-4">
     <h2 class="mb-4">Yazar Listesi</h2>
+    @if (User.IsInRole("Admin"))
+    {
     <a asp-controller="Yazar" asp-action="YazarEkle" class="btn btn-primary mb-3">Yazar Ekle</a>
+    }
   
 
     <table class="table table-bordered">
@@ -24,14 +27,20 @@
                         <td>@Html.DisplayFor(modelItem => item.YazarId)</td>
                         <td>@Html.DisplayFor(modelItem => item.YazarAdiSoyadi)</td>
                         <td>@Html.DisplayFor(modelItem => item.DogumTarihi)</td>
-                        <td>
-                            <a asp-controller="Yazar" asp-action="YazarGuncelle" asp-route-id="@item.YazarId"
-                               class="btn btn-primary btn-sm">Güncelle</a>
-                        </td>
-                        <td>
-                            <a asp-controller="Yazar" asp-action="YazarSil" asp-route-id="@item.YazarId"
-                               class="btn btn-danger btn-sm">Sil</a>
-                        </td>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <td>
+                                <a asp-controller="Yazar" asp-action="YazarGuncelle" asp-route-id="@item.YazarId"
+                                class="btn btn-primary btn-sm">Güncelle</a>
+                            </td>
+                        }
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <td>
+                                <a asp-controller="Yazar" asp-action="YazarSil" asp-route-id="@item.YazarId"
+                                class="btn btn-danger btn-sm">Sil</a>
+                            </td>
+                        }
                     </tr>
                 }
             }

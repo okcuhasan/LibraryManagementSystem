@@ -31,7 +31,19 @@ builder.Services.AddScoped<IGenericRepository<Kategori>, GenericRepository<Kateg
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.Cookie.Name = "KutuphaneSistemiCookie";
+    // options.LoginPath = "/GirisYap/GirisYap"; // authorize ile korunan sayfalara sisteme giriþ yapmadan girilmeye çalýþýlýr ise yönlendirilecek kaynaktýr
+    // LogoutPath = kullanýcý çýkýþ yaptýðýnda yöneleceði adres
+    // AccessDeniedPath = kullanýcý yetkisi olmayan sayfaya eriþmeye çalýþýr ise yöneleceði kaynak
+    options.SlidingExpiration = true; // kullanýcýnýn belirli bir zaman aralýðýnda istek yapmadýðý senaryoda oturumun sonlanmasý 30 gün için
+    options.ExpireTimeSpan = TimeSpan.FromDays(30); // 30 gün giriþ yapýlmaz ise cookie ler silinsin
 });
+
+
+//builder.Services.Configure<IdentityOptions>(options =>
+//{
+//    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5); // 5 dakika bekle
+//    options.Lockout.MaxFailedAccessAttempts = 5; // 5 defa hatalý giriþ yapýlýr ise
+//});
 
 
 var app = builder.Build();
@@ -61,7 +73,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
