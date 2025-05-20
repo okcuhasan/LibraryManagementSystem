@@ -1,4 +1,4 @@
-# KutuphaneYonetimSistemi-MVC
+# LibraryManagementSystem-MVC
 
 This is a full-featured library management system built with ASP.NET Core MVC, following a layered architecture. It supports both admin and user roles, secure login, and dynamic book borrowing and returning functionalities.
 
